@@ -1,0 +1,43 @@
+{
+  "method": "80/20 stratified holdout, random_state=42; metrics are local baseline results.",
+  "sms": {
+    "accuracy": 0.9849,
+    "precision": 0.9771,
+    "recall": 0.9425,
+    "f1": 0.9595,
+    "positive_class": "malicious (spam or smishing)",
+    "confusion_matrix": [
+      [
+        964,
+        5
+      ],
+      [
+        13,
+        213
+      ]
+    ],
+    "rows": 5971,
+    "train_rows": 4776,
+    "test_rows": 1195
+  },
+  "url": {
+    "accuracy": 0.9935,
+    "precision": 1.0,
+    "recall": 0.9848,
+    "f1": 0.9923,
+    "positive_class": "phishing",
+    "confusion_matrix": [
+      [
+        2288,
+        0
+      ],
+      [
+        26,
+        1686
+      ]
+    ],
+    "rows": 20000,
+    "train_rows": 16000,
+    "test_rows": 4000
+  }
+}
