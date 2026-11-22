@@ -1,11 +1,11 @@
-# Ashrey Goel — contribution area
+# Ashrey Goel — C++ OOP and DSA integration
 
-**Mapped responsibility:** C++ OOP development, DSA integration and core analysis engine.
+**Assigned area:** C++ scanner/risk-engine work and integration of C data structures.
 
-The Phase 3 canonical source files currently organized for this responsibility are in:
-- `../../phase 3/cpp/`
-- `../../phase 3/dsa/`
+Relevant files:
+- Phase II C++ scanner and risk calculator: `../../phase 2/cpp/`.
+- Phase III C++ scanner and risk calculator: `../../phase 3/cpp/`.
+- Phase II C evidence linked list: `../../phase 2/dsa/`.
+- Phase III C evidence list, scan-history linked list and Undo stack: `../../phase 3/dsa/`.
 
-The Phase 2 source snapshot also has an earlier scanner/risk-calculator/evidence-list implementation in `../../phase 2/`.
-
-This is a responsibility-based organization based on the Phase-II progress report, not a claim that every mapped file was individually authored by this member. Original Git commits remain attributed to their actual GitHub authors.
+These modules are invoked by the Python coordinator through separate native processes. The actual author of each Git commit remains the account shown in Git history.

@@ -1,9 +1,10 @@
-# Shivansh Bajaj — contribution area
+# Shivansh Bajaj — team lead, architecture and integration
 
-**Mapped responsibility:** System architecture, Streamlit/Python workflow, integration, ML orchestration and risk-fusion integration.
+**Assigned area:** overall system architecture, integration and the user-facing Python workflow.
 
-The Phase 3 integrated application files are intended to live at the root of `../../phase 3/`, including `app.py` and `scanner.py`. These runtime files remain pending transfer as noted in `../../phase 3/UPLOAD_STATUS.md`.
+Relevant files:
+- Phase II Streamlit interface and Python coordinator: `../../phase 2/app.py`, `../../phase 2/scanner.py`.
+- Phase III combined-input Streamlit interface and Python coordinator: `../../phase 3/app.py`, `../../phase 3/scanner.py`.
+- Project-level architecture and integration documentation: root `README.md`, `CONTRIBUTION_MAP.md` and the phase `docs/` folders.
 
-The Phase 2 interface and Python coordinator are preserved in the Phase 2 snapshot when their complete source files are added.
-
-This is a responsibility-based organization based on the Phase-II progress report, not a claim that every mapped file was individually authored by this member.
+The Python layer coordinates C/C++ command-line processes and prepares extracted input for scanning. The actual author of each Git commit remains the account shown in Git history.
