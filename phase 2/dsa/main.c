@@ -3,7 +3,6 @@
 #include <string.h>
 #include "evidence_list.h"
 
-/* Reads one line from the keyboard / Python and removes the newline. */
 static void read_line(char *text, int size) {
     if (fgets(text, size, stdin) == NULL) text[0] = '\0';
     text[strcspn(text, "\r\n")] = '\0';
