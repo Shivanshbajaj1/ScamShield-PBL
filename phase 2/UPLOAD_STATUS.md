@@ -1,29 +1,13 @@
-# Phase 2 upload status
+# Phase 2 source and verification status
 
-This folder preserves the earlier SMS/URL implementation snapshot.
+This folder now contains the complete Phase II archive contents: the Streamlit application, Python coordinator, C++ scanner and risk calculator, C evidence-list implementation, model artifacts/metrics, tests, setup/build scripts and phase-specific documentation.
 
-## Committed source modules
+Common research notes, papers, training scripts and datasets are stored once at repository root in `research_and_datasets/` because these files are identical in the Phase II and Phase III archives.
 
-### C++ OOP
-- `cpp/Scanner.cpp`
-- `cpp/Scanner.h`
-- `cpp/RiskCalculator.cpp`
-- `cpp/RiskCalculator.h`
-- `cpp/main.cpp`
+## Review verification (23 November 2026)
 
-### C DSA
-- `dsa/evidence_list.c`
-- `dsa/evidence_list.h`
-- `dsa/main.c`
+- C DSA sources compiled with GCC in the Linux review environment.
+- C++ scanner and risk calculator compiled with G++ in the Linux review environment.
+- Python unit tests: **10/10 passed** after the native executables were built.
 
-The source modules were copied from the supplied Phase 2 ZIP. The scanner and risk-calculator modules are byte-for-byte identical to the matching Phase 3 files in the supplied archives.
-
-## Not yet transferred from the Phase 2 ZIP
-
-The archive also contains the Streamlit/Python app and scanner coordinator, Windows setup/build scripts, requirements, documentation, tests, model metrics and model files, research notes/papers, and training/evaluation scripts and datasets. They are not included in this Phase 2 source-module commit.
-
-The Phase 2 presentation PDF is stored in this folder as `ScamshieldPhase2ppt.pdf`.
-
-## Source integrity check
-
-The eight C/C++ source files listed above were compared with the extracted Phase 2 ZIP using Git blob SHA-1 values. All eight blob IDs match exactly, so they are byte-for-byte copies of the supplied Phase 2 source files.
+Windows `build.bat`, interactive Streamlit browser use and Tesseract are not claimed as independently re-tested in this review.
