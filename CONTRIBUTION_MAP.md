@@ -1,25 +1,38 @@
-# ScamShield team contribution map
+# ScamShield contribution map
 
-This is a file organization map based on the supplied Phase-II progress report and the Phase-II/Phase-III source archives. It is not a claim about the authorship of individual Git commits.
+This page records the team's responsibility areas and links them to relevant parts of the project. It is a project-role map, not an assertion that Git commit authorship can be reassigned or that every file in a mapped folder was solely written by one person.
 
-## Shivansh Bajaj
-System architecture, Streamlit/Python workflow, C/C++/ML integration and risk-fusion orchestration.
+## Shivansh Bajaj — team lead, architecture and integration
 
-Mapped files: phase-specific `app.py`, `scanner.py`, README, build/setup instructions, requirements and architecture documentation.
+- Overall project architecture and integration of the phase-wise implementations.
+- Streamlit user interface and Python orchestration (`phase 2/app.py`, `phase 2/scanner.py`, `phase 3/app.py`, `phase 3/scanner.py`).
+- Coordination between Python, the C++ scanning/risk modules and C DSA processes.
+- Integration of the combined-input workflow and project-level documentation.
 
-## Ashrey Goel
-C++ OOP, DSA integration and core engine.
+See [individual contribution notes](team%20member%20contributions/Shivansh%20Bajaj/README.md).
 
-Mapped files: `cpp/`, `dsa/` and syllabus-mapping material. Phase III includes the full C++ and DSA source set, including history-list and Undo-stack files.
+## Ashrey Goel — C++ OOP and DSA integration
 
-## Kangana Agarwal
-Research, datasets, ML support, testing, validation and documentation.
+- C++ scanner classes and risk calculation (`phase 2/cpp/`, `phase 3/cpp/`).
+- C data-structure components (`phase 2/dsa/`, `phase 3/dsa/`), including evidence handling and Phase III history/Undo structures.
+- Native build integration with the Python coordinator.
 
-Mapped files: `models/`, `research_and_datasets/`, `tests/`, accuracy/evaluation notes, beginner guide and viva documentation.
+See [individual contribution notes](team%20member%20contributions/Ashrey%20Goel/README.md).
 
-## Phase snapshots
+## Kangana Agarwal — research, ML support and validation
 
-- Phase 2: SMS and URL scanner snapshot.
-- Phase 3: combined scanning snapshot; this is the full integrated source snapshot supplied for final implementation.
+- Research and dataset planning, source review and literature notes (`research_and_datasets/`).
+- Training/evaluation support scripts and supplied evaluation metrics/model resources.
+- Test cases, validation notes, beginner/viva material and project documentation.
 
-Do not interpret duplicated files between Phase 2 and Phase 3 as separate authorship claims. Phase 3 is a later integrated snapshot and supersedes parts of Phase 2.
+See [individual contribution notes](team%20member%20contributions/Kangana%20Agarwal/README.md).
+
+## Phase responsibilities
+
+| Phase | Project emphasis |
+|---|---|
+| Phase 1 | Proposal, initial problem framing and presentation material |
+| Phase 2 | SMS/URL prototype and first C/C++/Python integration |
+| Phase 3 | Combined input scanning, QR/OCR, evidence deduplication, history and Undo |
+
+For an accurate record of personal Git contributions, use GitHub's commit history and pull-request history. The responsibility map above is based on the team's supplied project-role description.
