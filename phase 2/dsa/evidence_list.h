@@ -5,7 +5,7 @@ typedef struct EvidenceRecord {
     char name[40];
     char reason[160];
     int points;
-} EVidenceRecord;
+} EvidenceRecord;
 
 void evidenceInsertEnd(const char *name, const char *reason, int points);
 int evidenceCount(void);
