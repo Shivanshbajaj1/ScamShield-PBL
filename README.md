@@ -1,99 +1,27 @@
-# 🛡️ ScamShield
-### Explainable Multimodal AI for Intelligent Scam and Phishing Detection
+# ScamShield — Explainable Multimodal Scam Detection
 
-ScamShield is an explainable multimodal AI-based cybersecurity system designed to detect and analyze **phishing, smishing, malicious URLs, QR-based scams (quishing), and impersonation attacks**.
+ScamShield is a student project for explainable scam and phishing detection. The project evolved through three phases. Each phase folder preserves the corresponding implementation snapshot.
 
-Unlike traditional detection systems that depend primarily on a single signal such as URL reputation or text classification, ScamShield treats scam detection as an **evidence-fusion problem** by combining information from multiple sources.
+## Repository structure
 
----
+- [Phase 1](phase%201/): proposal, presentation, LaTeX source and presentation assets.
+- [Phase 2](phase%202/): SMS and URL scanning prototype, evidence list, C++ scanner/risk engine, ML support and research assets.
+- [Phase 3](phase%203/): combined-input prototype with SMS, URLs, QR code and screenshot/OCR inputs, saved scan history and Undo support.
+- [Team member contributions](team%20member%20contributions/): contribution-oriented file index for Shivansh, Ashrey and Kangana.
 
-## 🚨 Problem Statement
+## Team
 
-Modern scams are distributed across SMS, email, social media, websites, QR codes, and screenshots. Attackers exploit urgency, authority, familiarity, and social engineering to make users act before verifying the information.
-
-A single indicator may not be sufficient to identify a sophisticated scam.
-
-For example:
-
-- A suspicious message may contain a legitimate-looking URL.
-- A malicious QR code may hide the destination from the user.
-- A screenshot may contain phishing content that traditional text-based detectors cannot directly analyze.
-- An attacker may impersonate a trusted organization or service.
-
-ScamShield addresses these challenges through **multimodal evidence analysis and explainable risk assessment**.
-
----
-
-## 🎯 Objectives
-
-- Detect phishing and smishing attempts.
-- Identify malicious and suspicious URLs.
-- Analyze QR-based scams and quishing attempts.
-- Extract and analyze text from screenshots using OCR.
-- Detect impersonation and suspicious social-engineering patterns.
-- Combine multiple evidence sources into a unified risk assessment.
-- Provide an **interpretable risk score** rather than only a binary prediction.
-- Implement the core threat-analysis engine using **C++ OOP and DSA**.
-- Maintain an updateable threat knowledge base.
-- Evaluate the system using accuracy, precision, recall, F1-score, false positives, and robustness.
-
----
-
-## 🔍 Multimodal Analysis
-
-ScamShield analyzes different forms of evidence:
-
-| Input | Analysis |
+| Member | Documented project responsibility |
 |---|---|
-| 💬 Text | Urgency, threats, credential requests, payment requests, impersonation |
-| 🔗 URL | Length, subdomains, special characters, suspicious keywords and structure |
-| 📱 QR Code | QR decoding, destination analysis and structural indicators |
-| 🖼️ Screenshot | OCR-based text and URL extraction |
-| 🌐 Threat Intelligence | Reputation and historical indicators |
-| 🧠 Context | Combined evidence and behavioral indicators |
+| Shivansh Bajaj | System architecture, Streamlit/Python workflow, integration and risk-fusion orchestration |
+| Ashrey Goel | C++ OOP, DSA integration and core analysis engine |
+| Kangana Agarwal | Research, datasets, ML support, testing, validation and documentation |
 
-These signals are passed to an **evidence-fusion layer** to produce the final assessment.
+The contribution folders are organizational mappings based on the supplied Phase-II progress report and project files. They do not claim that all mapped files were individually authored by the named member or rewrite Git commit history.
 
----
+## Important notes
 
-## 🏗️ System Architecture
-
-```text
-                 ┌─────────────────────┐
-                 │     User Input      │
-                 │ Text / URL / QR /   │
-                 │      Screenshot     │
-                 └──────────┬──────────┘
-                            │
-                            ▼
-              ┌──────────────────────────┐
-              │ Modality-Specific        │
-              │ Feature Extraction       │
-              └────────────┬─────────────┘
-                           │
-          ┌────────────────┼────────────────┐
-          ▼                ▼                ▼
-     Text Analysis    URL Analysis     QR/OCR Analysis
-          │                │                │
-          └────────────────┼────────────────┘
-                           ▼
-              ┌──────────────────────────┐
-              │ Threat Intelligence &   │
-              │ Context Aggregation      │
-              └────────────┬─────────────┘
-                           ▼
-              ┌──────────────────────────┐
-              │ Multimodal Evidence      │
-              │ Fusion Layer             │
-              └────────────┬─────────────┘
-                           ▼
-              ┌──────────────────────────┐
-              │ C++ Threat Analysis      │
-              │ Engine                   │
-              │ OOP + DSA                │
-              └────────────┬─────────────┘
-                           ▼
-              ┌──────────────────────────┐
-              │ Risk Score + Evidence +  │
-              │ Recommended Action       │
-              └──────────────────────────┘
+- The Phase-II and Phase-III code snapshots are preserved separately; Phase III is the later integrated version.
+- Risk scores are rule-based indicators and are not guarantees or probabilities of safety.
+- Large research datasets may need Git LFS or a separate download source. Check dataset and paper redistribution terms before republishing.
+- See each phase's README and setup guide for its run instructions.
