@@ -61,7 +61,7 @@ void history_load(void) {
     FILE *file = fopen(HISTORY_FILE, "r");
     char line[700];
     if (file == NULL) return;
-    while (fets(line, sizeof(line), file) != NULL) {
+    while (fgets(line, sizeof(line), file) != NULL) {
         HistoryNode *node = (HistoryNode *)calloc(1, sizeof(HistoryNode));
         char *part;
         if (node == NULL) break;
@@ -90,7 +90,7 @@ int history_add(const char *type, int score, const char *label, const char *reas
     HistoryNode *node;
     time_t now;
     struct tm *time_info;
-    if (score < 0 || score > 100 || strchr(type, 'p')|| strchr(reasons, '|')) return -1;
+    if (score < 0 || score > 100 || strchr(type, '|') || strchr(reasons, '|')) return -1;
     node = (HistoryNode *)calloc(1, sizeof(HistoryNode));
     if (node == NULL) return -1;
     node->id = history_last_id() + 1;
@@ -124,7 +124,7 @@ int history_delete(int id) {
 void history_print(void) {
     HistoryNode *current = head;
     while (current != NULL) {
-        printf("RECORD=d%%s|%s|%d%%s|%s|%s\n", current->id, current->date_time, current->input_type,
+        printf("RECORD=%d|%s|%s|%d|%s|%s|%s\n", current->id, current->date_time, current->input_type,
             current->score, current->label, current->reasons, current->preview);
         current = current->next;
     }
