@@ -19,7 +19,6 @@ int evidenceSearch(const char *name) {
     return 0;
 }
 
-/* Insert one finding at the end; duplicate finding names are ignored. */
 void evidenceInsertEnd(const char *name, const char *reason, int points) {
     EvidenceNode *newNode;
     EvidenceNode *temp;
