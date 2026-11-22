@@ -1,0 +1,9 @@
+Area,Source,Dataset/Study,Size,Role,Link
+Message/Smishing,Mendeley Data,SMS PHISHING DATASET,5971 messages,Primary message/smishing baseline,https://data.mendeley.com/datasets/f45bkkt8pr/1
+Message,UCI,SMS Spam Collection,5574 messages,Simple benchmark baseline,https://archive.ics.uci.edu/dataset/228/sms+spam+collection
+URL,UCI,PhiUSIIL Phishing URL,235795 rows,Primary URL dataset,https://archive.ics.uci.edu/dataset/967/phiusil+phishing+url+website
+QR/Quishing,GitHub + arXiv,Trad & Chehab Quishing Dataset,9987 QR codes,QR-specific dataset and research,https://github.com/fouadtrad/Detecting-Quishing-Attacks-with-Machine-Learning-Techniques-Through-QR-Code-Analysis
+Screenshot,Zenodo,Phishing and Legitimate Websites Dataset,60000 URLs + screenshots,Visual/screenshot research,https://zenodo.org/records/21379702
+Screenshot/Impersonation,Zenodo,Phishing Website Dataset,10395 websites,Smaller visual and brand-impersonation dataset,https://zenodo.org/records/8041387
+Threat Intelligence,PhishTank,Verified phishing feed,Live feed,External phishing validation,https://phishtank.org/developer_info.php
+Threat Intelligence,URLhaus,Malware URL database,Live feed,External malware URL validation,https://urlhaus.abuse.ch/api/

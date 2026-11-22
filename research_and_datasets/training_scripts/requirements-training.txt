@@ -1,0 +1,3 @@
+-r requirements.txt
+# Install this additional package only if training with Parquet-based Phish360 data.
+pyarrow>=14
