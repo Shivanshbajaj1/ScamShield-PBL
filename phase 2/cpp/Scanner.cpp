@@ -9,8 +9,7 @@ static string lower(string text) {
     return text;
 }
 
-/* A word must have non-letter/digit characters on both sides. This prevents
-   false matches such as "pin" inside the normal word "shipping". */
+
 static bool has_word(const string &text, const string &word) {
     size_t place = text.find(word);
     while (place != string::npos) {
