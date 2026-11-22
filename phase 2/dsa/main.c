@@ -8,11 +8,7 @@ static void read_line(char *text, int size) {
     text[strcspn(text, "\r\n")] = '\0';
 }
 
-/* Input:
-   EVIDENCE
-   <count>
-   then name, reason, points (3 lines) for each finding
-   Output: only the unique findings, one FINDING= line each. */
+
 int main(void) {
     char command[40], count_text[30];
     char name[100], reason[300], points_text[30];
