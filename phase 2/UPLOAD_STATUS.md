@@ -23,3 +23,7 @@ The source modules were copied from the supplied Phase 2 ZIP. The scanner and ri
 The archive also contains the Streamlit/Python app and scanner coordinator, Windows setup/build scripts, requirements, documentation, tests, model metrics and model files, research notes/papers, and training/evaluation scripts and datasets. They are not included in this Phase 2 source-module commit.
 
 The Phase 2 presentation PDF is stored in this folder as `ScamshieldPhase2ppt.pdf`.
+
+## Source integrity check
+
+The eight C/C++ source files listed above were compared with the extracted Phase 2 ZIP using Git blob SHA-1 values. All eight blob IDs match exactly, so they are byte-for-byte copies of the supplied Phase 2 source files.
