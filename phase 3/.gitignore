@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+dsa/*.o
+scamshield.exe
+history.txt
+scamshield_dsa.exe
